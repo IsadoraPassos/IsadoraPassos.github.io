@@ -1,0 +1,15 @@
+.cinza {background-color: silver;}
+.moldura-lg {
+    width: 560px;
+    text-align: center;
+    margin: auto;
+}
+.moldura-md {
+    width: 310px;
+    text-align: center;
+    float: right;
+}
+.azul {
+    color: rgb(94, 94, 255);
+    text-align: center;
+}
