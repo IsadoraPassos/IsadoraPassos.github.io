@@ -1,0 +1,156 @@
+:root {
+    --background-gray: rgb(237,237, 236);
+    --background-blue: rgb(13, 31, 41);
+    --background-white: rgb(255, 255, 255);
+
+    --font-blue: rgb(13, 31, 41);
+    --font-white: rgb(255, 255, 255);
+    
+    --input-blue:rgb(1, 17, 23);
+    --input-blue-05:rgba(1, 17, 23,0.5);
+    --orange: rgb(246, 104, 0);
+}
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+}
+
+section {
+    width:960px;
+    margin:0 auto;
+}
+
+/******************
+    Header
+*******************/
+header {
+    background-color: var(--background-gray);
+    color: var(--font-blue);
+}
+/* nome da empresa */
+header h1 { /* alterar todos os h1 que sejam descendentes de header */
+    margin:0;
+    padding-top:10px;
+    font-size:1.4rem;
+}
+
+header h1::first-letter {
+    font-size:1.2rem;
+}
+
+header mark {
+    background-color: var(--background-gray);
+    color: var(--orange);
+    text-transform: lowercase;
+}
+
+/*descricao dos  servicos*/
+header h3 {
+    width: 400px;
+    line-height:1.4em;
+}
+
+header p {
+    width: 380px;
+    line-height:1.4em;
+    font-size: 0.9rem;
+}
+
+header article, header figure {
+    display:inline-block;
+}
+
+header figure {
+    position: relative;
+
+}
+
+header figcaption {
+    position:absolute;
+    top:0;
+    right: -100px;
+    width: 180px;
+    padding: 5px;
+
+    border-radius: 5px;
+    background-color: var(--background-blue);
+    color: var(--orange);
+    
+}
+
+.phone {
+    color: var(--font-white);
+}
+
+header nav {
+    background-color: var(--background-blue);
+}
+
+header ul {
+    padding-left: 0;
+    display:flex;
+    flex-direction: row;    
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+header li {
+    padding: 10px;
+}
+header li:first-child, header li:hover {
+    background-color: var(--orange);
+}
+
+header a {
+    color: var(--font-white);
+    text-decoration: none;
+}
+/******************
+    Main
+*******************/
+
+main {
+    color: var(--font-blue);
+    
+}
+
+main section {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+main article {
+    width: 300px;
+    border:6px solid var(--background-gray);
+}
+main article figure {
+    position: relative;
+    margin:0;
+    width: 100%;
+}
+
+main article figcaption {
+    position:absolute;
+    bottom:4px;
+    width: 100%;
+    background-color: var(--input-blue-05);
+    color: var(--font-white);
+    padding:5px;
+}
+main article img {
+    max-width:100%;
+}
+/******************
+    Footer
+*******************/
+
+footer {
+    background-color: var(--background-blue);
+    color: var(--font-white);
+}
