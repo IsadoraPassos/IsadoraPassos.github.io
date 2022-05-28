@@ -1,15 +1,19 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .laranja {
     color: rgb(247, 133, 3);
 }
-#parte1 {
-    width: 600px;
+header {
+    width: 900px;
+    margin: 0 auto;
 }
 .conteiner{
     text-align: left;
+
 }
 #ladoDireito {
     text-align: right;
