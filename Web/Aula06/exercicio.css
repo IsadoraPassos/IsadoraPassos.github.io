@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.laranja {
+    color: rgb(247, 133, 3);
+}
+#parte1 {
+    width: 600px;
+}
+.conteiner{
+    text-align: left;
+}
+#ladoDireito {
+    text-align: right;
+
+}

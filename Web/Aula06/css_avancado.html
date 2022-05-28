@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title + p{
+            font-style: italic;
+        }
+        p:last-child{
+            font-weight: bold;
+        }
+        table, td, th {
+            border: 1px solid black;
+        }
+        table {
+            background-color: lightgray;
+        }
+        tr:nth-child(2n) {
+            background-color: gray;
+        }
+        tr:hover {
+            background-color: yellow;
+        }
+        .principal > p{
+            font-size: 1.5rem;
+
+        }
+        input {
+            display: block;
+            margin: 10px;
+        }
+        input[type=text] {
+            width: 400px;
+        }
+        input[name*="user"] {
+            color: red;
+        }
+        h3 + p::first-letter {
+            font-size: 3rem;
+            float: left;
+        }
+        .efeitos {
+            border: 1px solid black;
+            height: 400px;
+            width: 400px;
+            margin: 50px auto;
+            border-radius: 30px 90px 130px 5px;
+            box-shadow: 10px 30px 50px black;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Avançado</h1>
+    <h3>Seletores</h3>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <button class="log-menu">Login</button>
+    </nav>
+
+    <div class="principal">
+    <h3 class="title">Lorem</h3>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati numquam suscipit quibusdam cumque doloribus ullam excepturi soluta voluptas, animi ratione veritatis distinctio deleniti eligendi optio error sapiente. Assumenda, adipisci.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati numquam suscipit quibusdam cumque doloribus ullam excepturi soluta voluptas, animi ratione veritatis distinctio deleniti eligendi optio error sapiente. Assumenda, adipisci.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati numquam suscipit quibusdam cumque doloribus ullam excepturi soluta voluptas, animi ratione veritatis distinctio deleniti eligendi optio error sapiente. Assumenda, adipisci.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati numquam suscipit quibusdam cumque doloribus ullam excepturi soluta voluptas, animi ratione veritatis distinctio deleniti eligendi optio error sapiente. Assumenda, adipisci.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati numquam suscipit quibusdam cumque doloribus ullam excepturi soluta voluptas, animi ratione veritatis distinctio deleniti eligendi optio error sapiente. Assumenda, adipisci.
+    </p>
+    <div>
+        <h3>Detalhe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde exercitationem excepturi officia. Voluptatem suscipit placeat voluptate molestias distinctio ea tenetur provident sint. Ipsum porro sit aliquam voluptates ea harum distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quos aut, qui quas sit esse perferendis neque ducimus asperiores sint minima expedita nobis excepturi incidunt ullam! Possimus doloribus officiis praesentium?</p>
+    </div>
+    </div>
+    <input type="text" name="user-nome">
+    <input type="text" name="user-endereco">
+    <input type="number" name="user-numero">
+    <input type="email" name="user-email">
+    <input type="email" name="trab-email">
+    <input type="email" name="trab-cep">
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Ana</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>Ana</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Ana</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>Ana</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>Ana</th>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>Ana</th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>Ana</th>
+        </tr>
+        <tr>
+            <th>8</th>
+            <th>Ana</th>
+        </tr>
+        <tr>
+            <th>9</th>
+            <th>Ana</th>
+        </tr>
+        <tr>
+            <th>10</th>
+            <th>Ana</th>
+        </tr>
+
+
+       
+        <div class="efeitos">
+
+        </div>
+        
+        
+    </table>
+    
+</body>
+</html>

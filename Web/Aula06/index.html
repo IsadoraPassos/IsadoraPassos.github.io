@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf8">
+        <title>Aula06</title>
+    </head>
+    <body>
+        
+        <h1>Forms e Inputs</h1>
+        <form method="GET" action="#" >
+            <input type="hidden" name="tokenAcess" value="asd"> 
+            <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>Nome</label>
+            <input name="nome" type="text" maxlength="20" placeholder="Digite seu nome">
+            <br>
+            <label>E-mail</label>
+            <input type="email" placeholder="Digite o e-mail">
+            <br>
+            <label>Senha</label>
+            <input name="senha" type="password">
+            <br>
+            <label>Idade</label>
+            <input name="idade" type="number" min="0" max="100" step="0.1">
+            <br>
+            </fieldset>
+            <label>Data de Nascimento</label>
+            <input name="nascimento" type="date">
+            <br>
+            <label>Cor preferida</label>
+            <input name="cor" type="color">
+            <br>
+
+            <fieldset>
+                <legend>Escolaridade</legend>
+                <input name="escolaridade" type="radio" value="fundamental">Fundamental<br>
+                <input name="escolaridade" type="radio" value="medio">Medio<br>
+                <input name="escolaridade" type="radio" value="superior">Superior<br>
+                <input name="escolaridade" type="radio" value="pos-graduado">Pos-Graduado<br>
+            </fieldset>
+            <fieldset>      
+                <legend>Esportes Favoritos</legend>
+                <input name="esportes" type="checkbox" value="futebol">Futebol<br>
+                <input name="esportes" type="checkbox" value="volei">Volei<br>
+                <input name="esportes" type="checkbox" value="basquete">Basquete<br>
+                <input name="esportes" type="checkbox" value="tenis">Tênis<br>
+            </fieldset>
+
+            <label for="uf">Estado de Origem</label>
+            <select name="uf">
+                <option value="rj">Rio de Janeiro</option>
+                <option value="sp">São Paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="es">Espirito Santo</option>
+            </select>
+
+
+
+            <br>
+            <input type="submit" value="Enviar">
+
+        </form>
+    </body>
+
+</html>
