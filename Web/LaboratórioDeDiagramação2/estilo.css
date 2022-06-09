@@ -12,12 +12,25 @@
     background-color: white;
 }
 
+.textoCinza {
+    color: lightgray;
+}
+
+.fundoCinza {
+    background-color: lightgray;
+}
+
 header {
     background-image: url(./images/banner.jpg);
     background-size: cover;
-    width: 900px;
+    width: 1200px;
     height: 400px;
-    
+}
+
+body {
+    width: 1200px;
+    height: 400px;
+    padding: 10px;
 }
 
 header article {
@@ -39,7 +52,7 @@ header ul {
     position: absolute;
     text-align: center;
     top: 220px;
-    left: 580px;
+    left: 420px;
 }
 
 
@@ -47,8 +60,6 @@ header article h1 {
     font-size: 3rem;
     
 }
-
-
 
 header ul li{
     padding: 10px;
@@ -61,19 +72,182 @@ header ul li:first-child {
     border-radius: 20px;
 }
 
-main{
-    width: 900px;
-    height: 400px;
-    padding: 10px;
+header ul li {
+    border: 1px solid white;  
+    border-radius: 20px;
+    margin: 10px;
 }
+
+header ul li:hover {
+    animation-name: texto;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+@keyframes texto {
+    from{color: white}
+    to{color: black}  
+    form{background-color: transparent}
+    to{background-color: white}  
+}
+
+main {
+    padding-top: 20px;
+}
+
 
 main section article h1{
     font-size: 2rem;
     text-transform: uppercase;
 }
 
-main section article img {
-    width: 600px;
+.parte1 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 100px;
 }
 
- 
+.quebraLinha {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+main section article img {
+    width: 800px;
+}
+
+main section aside h1 {
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.caixaExterna {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 320px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 3px;
+    
+}
+
+.caixaExterna:last-child {
+    border: none;
+}
+
+.caixaInterna {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 10px;
+    padding-left: 0;
+    margin: 6px 0;
+    
+}
+
+.caixaInterna p {
+    padding-left: 5px;
+}
+
+.caixaInterna img {
+    width: 90px;
+    height: 70px;
+}
+
+.caixaExterna p:first-child {
+    text-align: left;
+    margin: 0;
+}
+
+.caixaMaior {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.caixa {
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.caixa h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.caixa img {
+    width: 350px;
+    text-align: left;
+    margin: 0;
+}
+
+.botao {
+    margin: 0;
+    border: 0;
+    border-radius:90px;
+    padding: 15px;
+    width: 130px;
+    background-color: orangered;
+}
+
+.botao:hover {
+    animation-name: botao;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+@keyframes botao {
+    from{color: white}
+    to{color: black}  
+    form{background-color: orangered}
+    to{background-color:orange}  
+}
+
+footer {
+    width: 1180px;
+    height: 400px;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(61, 58, 58);
+    display: flex;
+    margin-right: 50px;
+}
+
+
+footer article {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 80px 20px 50px 10px;
+    
+}
+
+.caixaRodape {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+    width: 390px;
+  
+}
+
+.caixaRodape p {
+    margin: 0;
+    line-height: 2;
+    border-bottom: 1px solid white;
+    margin-right: 40px;
+}
+
+.caixaRodape p:last-child {
+    border-bottom: none;
+}
+
+.caixaRodape h3 {
+    margin: 0;
+    text-transform: uppercase;
+}
