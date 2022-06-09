@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+</head>
+<body>
+    <form method="post" action="./clientes" name="meuForm" id="meuForm" >
+    <fieldset id="cadastro">
+        <legend>Cadastro de Clientes</legend>
+        <label for="nome">Nome</label> <br>
+        <input type="text" name="nome" id="nome" maxlength="30" placeholder="Digite seu nome" required>
+        <br><br>
+
+        <label for="endereco">Endereço</label> <br>
+        <input type="text" name="endereco" id="endereco" maxlength="50" size="100" placeholder="Digite seu endereço" required>
+        <br><br>
+
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+        <br><br>
+
+        <input type="checkbox" name="checkbox" id="checkbox" >
+        <label for="checkbox">Desejo receber newsletter</label>
+        <br><br>
+
+        <input type="submit" name="enviar" id="enviar" action="TrataForm.php" value="Cadastrar">
+        <input type="reset" name="reset" id="reset" value="Cancelar">
+
+    </fieldset>    
+    </form>
+    
+</body>
+</html>
