@@ -1,0 +1,8 @@
+#cabecalho {
+    width:1200px;  
+    background-color:#eee;
+}
+
+#cabecalho img {
+    float:right
+}

@@ -4,37 +4,168 @@
     margin: 0;
 }
 
+/*Cores*/
+.textoCinza {
+    color: rgb(75, 73, 73);
+}
+
 body {
     margin: auto;
-    width: 1200px;
+    width: 1400px;
     height: 500px;
     background-color: lightgray;
 }
 
+/* Barra de Navegação */
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content:left;
     list-style: none; 
-    width: 1200px;
-    padding: 15px;
     background-color: white;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     border-top: 1px solid black;
 }
 
-nav ul li {
-    padding-left: 15px;
-    border-left: 1px solid lightgray;
-    padding-right: 15px;
+.nav {
+    margin: 7.5px;
+    padding-left: 10px;
+   
 }
 
-nav ul li:first-child {
-    padding: 0;
-    padding-right: 40px;
+.sb {
+    border-left: none;
+}
+
+nav ul li {
+    padding-left: 20px;
+    border-left: 1px solid lightgray;
+    padding-right: 20px;
+    padding: 7.5px;
+    text-transform: uppercase;
+}
+
+#cefet {
+    padding-top: 15px;
+    padding-right: 60px;
+    padding-left: 20px;
     text-transform: uppercase;
     font-size: 0.9rem;
     border-left: none;
     border-right: none;
     border-right: 1px solid lightgray;
+    
+}
+
+/*Medidas da Página principal*/
+main {
+    width: 1200px;
+    padding: 70px;
+    padding-left: 150px;
+}
+
+/*Lado esquerdo da página principal*/ 
+#logo {
+    clip-path: polygon(0 31%, 50% 0, 100% 29%, 100% 76%, 50% 100%, 0 75%);
+    width: 80px;
+}
+
+#lado {
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#caixa1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(75, 73, 73);
+    text-transform: uppercase;
+}
+
+main aside div h1 {
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+}
+
+.textoPequeno {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+}
+
+.tamanhoImagens {
+    width: 300px;
+}
+
+.avatar {
+    clip-path: circle(50% at 50% 50%);
+    position:relative;
+    left: 230px;
+    bottom: 40px;
+}
+
+.posts {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.caixaPost {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(75, 73, 73);
+}
+
+.lengendaImg {
+    padding: 15px;
+    height: 70px;
+}
+/**/
+.imagemPequena {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+.caixa2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+}
+
+.caixaMenor {
+    border-bottom: 1px solid rgb(75, 73, 73);
+    padding: 15px;
+    padding-left: 0;
+}
+
+.ultimaCaixaMenor {
+    padding-bottom: 50px;
+}
+
+/**/
+.sobre {
+    border-top: 1px solid rgb(75, 73, 73);
+    border-bottom: 1px solid rgb(75, 73, 73);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.sobre p {
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+}
+
+.sobre a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+    
 }

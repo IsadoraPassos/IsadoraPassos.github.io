@@ -19,7 +19,11 @@ main {
     width: 600px;
     height: 60px;
     text-align: center;
-    line-height: 2rem;
+    
+}
+
+.conteudo1 p {
+    margin-top: 10px;
 }
 
 .caixaGrande {
@@ -32,17 +36,19 @@ main {
     margin-top: 50px;
     padding-top: 25px;
     padding-bottom: 12.5px;
+    margin-bottom: 50px;
 }
 
 .caixaPequena {
     border: 1px solid lightgray;
-    width: 200px;
+    width: 230px;
     height: 60px;
     padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: 0 0 8px 8px;
+    margin-right: 20px;
 }
 
 .textoLado {
@@ -52,11 +58,12 @@ main {
 .circulo {
     position: relative;
     float: left;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border: 1px solid black;
     border-radius: 50%;
-
+    margin: 0;
+    margin-right: 10px;
 }
 
 #caixaDeTexto {
@@ -67,7 +74,7 @@ main {
 }
 
 #botao {
-    width: 150px;
+    width: 140px;
     display: flex;
     background-color: rgb(97, 93, 93);
     color: white;

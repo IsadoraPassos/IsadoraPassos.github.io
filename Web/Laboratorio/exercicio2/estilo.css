@@ -3,6 +3,7 @@ body {
     height: 500px;
     padding: 100px;
     color: #DD0000;
+    margin: auto;
 }
 
 #cabecalho {
@@ -48,4 +49,8 @@ main {
     padding: 8px 5px;
     border-top: 1px solid black;
     border-left: 1px solid black;
+}
+
+#tabela tr td:last-child {
+    text-align: right;
 }

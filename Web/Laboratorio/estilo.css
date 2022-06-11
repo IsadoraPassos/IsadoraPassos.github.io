@@ -7,3 +7,21 @@ body {
     height: 500px;
     padding: 50px;
 }
+
+body h1 {
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: gray;
+    margin-bottom: 0;
+}
+
+#lista {
+    width: 400px;
+    margin-top: 0;
+    background-color: lightgray;
+}
+
+#lista li{
+    padding: 10px;
+}
