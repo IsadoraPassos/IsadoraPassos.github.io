@@ -1,0 +1,51 @@
+body {
+    width: 500px;
+    height: 500px;
+    padding: 100px;
+    color: #DD0000;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#cabecalho img {
+    width: 150px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#cabecalho h2 {
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+main {
+    width: 350px;
+    height: 350px;
+    padding: 50px;
+    background-color:   #DDDDDD;
+}
+
+#tabela {
+    background-color: #FFFFCC;
+    text-align: center;
+}
+
+#tabela th {
+    background-color: rgb(250, 196, 18);
+    padding: 8px 5px; 
+
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#tabela td {
+    background-color: #FFFFCC;
+    padding: 8px 5px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}

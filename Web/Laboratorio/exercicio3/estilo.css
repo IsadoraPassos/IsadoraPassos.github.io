@@ -1,0 +1,71 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+.textoPequeno {
+    font-size: 0.8rem;
+}
+
+header {
+    width: 1200px;
+    height: 400px;
+    margin-top: 1px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    
+}
+
+#logo {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    font-size: 0.7rem;
+}
+
+
+#nav {
+    padding-inline-start: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    right: 50px;
+    width: 380px;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    margin-top: 40px;
+    margin-right: 50px;
+    margin-left: 0;
+    
+}
+
+header nav ul li{
+    padding: 5px 15px;
+    
+} 
+
+header nav ul li:last-child {
+    color: white;
+    background-color:  rgb(97, 93, 93);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#banner {
+    position: relative;
+    top: 210px;
+    border: 1px solid lightgray;
+    width: 400px;
+    text-align: center;
+    padding: 10px 5px;
+    line-height: 1.8rem;
+}
+
+#botao {
+    background-color: rgb(97, 93, 93);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    padding: 7px;
+}
