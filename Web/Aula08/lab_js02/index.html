@@ -459,15 +459,13 @@ btn04.addEventListener("click", ()=>{
 const getPalavra = () => document.querySelector("#q05-palavra").value
 
 const verificaPalindromo = (palavra) => {
-    let resp = false
-    let j = palavra.length - 1 
-    for(let i = 0; i != j; i++){
-        if(palavra[i] == palavra[j]){
-            resp = true
+    let j = palavra.length
+    for(let i = 0; i < j/2; i++){
+        if(palavra[i] !== palavra[j - 1 - i]){
+            return false
         }   
-        j--
-    }
-    return resp 
+    return true
+    } 
 }
 btn05.addEventListener("click", () => {
     const palavra = getPalavra()

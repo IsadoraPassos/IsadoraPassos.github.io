@@ -18,7 +18,7 @@ const fatorial = (numero) => {
     let valor = 1 
     if(numero == 1) 
         resp = `O fatorial do número ${numero} é igual a 1`
-    else if (numero < 0) 
+    else if (numero <= 0) 
         resp = `Valor Inválido`
     else
         for(let aux = 2; aux <= numero; aux++)
