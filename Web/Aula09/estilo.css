@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.filme {
+    margin: 40px;
+    display: flex;
+}
+
+.filme img {
+    width: 500px;
+    margin: 0;
+    
+}
+
+.texto {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.caixaClassificacao {
+    width: 30px;
+}
+
+.faixa-0 {
+    color: white;
+    background-color: green;
+}
+
+.faixa-10 {
+    color: white;
+    background-color: blue;
+}
+
+.faixa-12 {
+    color: white;
+    background-color:yellow;
+}
+
+.faixa-14 {
+    color: white;
+    background-color: orangered;
+}
+
+.faixa-16 {
+    color: white;
+    background-color: red;
+}
+
+.faixa-18 {
+    color: white;
+    background-color: black;
+}
