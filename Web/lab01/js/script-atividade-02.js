@@ -17,5 +17,6 @@ const imprimirPotenciasDeQuatro = () => {
 }
 
 botao1.addEventListener("click", () => {
+    document.querySelector("#resp1").textContent = "" //Limpar tela 
     imprimirPotenciasDeQuatro()
 })

@@ -1,12 +1,5 @@
 const botao1 = document.querySelector(".enviar1")
 
-const obterValor = seletor => {
-    const val = document.querySelector(seletor)
-    let num = isNaN(val.value)? 0:parseFloat(val.value)
-    val.value = ""
-    return num
-}
-
 const escreveValor = (seletor, valor) => {
     const nodeConteudo = document.createTextNode(valor)
     document.querySelector(seletor).textContent = ""
@@ -28,6 +21,5 @@ const fatorial = (numero) => {
 }
 
 botao1.addEventListener("click", () => {
-    const numero = obterValor("#val1")
-    escreveValor("#resp1", fatorial(numero))
+    escreveValor("#resp1", fatorial(12))
 })

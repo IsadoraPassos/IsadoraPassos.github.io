@@ -22,6 +22,7 @@ const ImprimirNumerosPrimos = () => {
 }
 
 botao1.addEventListener("click", () => {
+    document.querySelector("#resp1").textContent = "" //Limpar tela 
     escreveValor("#resp1", `Números Primos: `)
     ImprimirNumerosPrimos()
 })
