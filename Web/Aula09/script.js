@@ -29,12 +29,23 @@ const carregaFilmes = catalogo => {
     })  
 }
 
-let opinioes = (opinioes) => {
+let opinioes = opinioes => {
+    const p = document.createElement("p")
     opinioes.forEach(op => {
-        let p = document.createElement("p")
-        p.innerHTML += `${op}`
-        return p
+        p.innerHTML += `Rating: ${op.rating}. Descrição: ${op.descricao}<br>`
     })
+    return p.innerHTML
+
+}
+
+let semelhantes = (titulo, filmes) => {
+    const p = document.createElement("p")
+    
+    titulo.forEach(t => {
+        
+        p.innerHTML += `<a href="#filme-${t}"> </a>`
+    })
+    return p.innerHTML
 }
 
 let criaBanner = (filme) => {
@@ -42,13 +53,14 @@ let criaBanner = (filme) => {
     filmeDiv.classList.add("filme")
     filmeDiv.innerHTML += `<img src="${filme.figura}" alt="${filme.titulo}" class="imagens">
                         <div class="texto">
-                        <h2>${filme.titulo}</h2>
+                        <h2 id="filme-${filme.id}">${filme.titulo}</h2>
                         <p class="caixaClassificacao faixa-${filme.classificacao}">${filme.classificacao}</p>
                         <div class="conteudo">
                         <p>Gêneros: ${filme.generos}</p>
                         <p>Elenco: ${filme.elenco}</p>
-                        <p class="opinioes">Opiniões: ${opinioes(filme.opinioes)}</p>
                         <p>Resumo: ${filme.resumo}</p>
+                        <p class="opinioes">Opiniões:<br> ${opinioes(filme.opinioes)}</p>
+                        <p>Titulos Semelhantes: ${semelhantes(filme.titulosSemelhantes, filme)}</p>
                         </div>
                         </div>
                         `
