@@ -18,14 +18,11 @@ if(self.fetch) {
     xhttp.send()
 
 }
-
-
-
 const carregaFilmes = catalogo => {
     const filmes = catalogo //JSON.parse(catalogo)
     const conteudo = document.querySelector("#content")
-    filmes.forEach(filmes => {
-        conteudo.appendChild(criaBanner(filmes))
+    filmes.forEach(filme => {
+        conteudo.appendChild(criaBanner(filme, catalogo))
     })  
 }
 
@@ -38,19 +35,26 @@ let opinioes = opinioes => {
 
 }
 
-let semelhantes = (titulo, filmes) => {
+let encontrarFilme = (catalogo, id) => {
+    console.log(catalogo)
+    return catalogo.find(filme => filme.id==id)
+}
+
+let semelhantes = (filmeIdList, catalogo) => {
     const p = document.createElement("p")
-    
-    titulo.forEach(t => {
-        
-        p.innerHTML += `<a href="#filme-${t}"> </a>`
+    filmeIdList.forEach(t => {
+        let filme = encontrarFilme(catalogo, t)
+        p.innerHTML += `<a href="#filme-${t}">${filme.titulo} </a>`
     })
     return p.innerHTML
 }
 
-let criaBanner = (filme) => {
+
+
+let criaBanner = (filme, catalogo) => {
     let filmeDiv = document.createElement("div")
     filmeDiv.classList.add("filme")
+    
     filmeDiv.innerHTML += `<img src="${filme.figura}" alt="${filme.titulo}" class="imagens">
                         <div class="texto">
                         <h2 id="filme-${filme.id}">${filme.titulo}</h2>
@@ -60,7 +64,7 @@ let criaBanner = (filme) => {
                         <p>Elenco: ${filme.elenco}</p>
                         <p>Resumo: ${filme.resumo}</p>
                         <p class="opinioes">Opiniões:<br> ${opinioes(filme.opinioes)}</p>
-                        <p>Titulos Semelhantes: ${semelhantes(filme.titulosSemelhantes, filme)}</p>
+                        <p>Titulos Semelhantes: ${semelhantes(filme.titulosSemelhantes, catalogo)}</p>
                         </div>
                         </div>
                         `
