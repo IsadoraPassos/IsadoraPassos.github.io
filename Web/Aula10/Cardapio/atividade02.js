@@ -48,27 +48,42 @@ $(function(){
     function criaElemento(array){
         let item = $("#pedidos")
         item = $("<li>")
+        let link = $("<a>")
+        link.attr("class", array.id)
+        link.attr("href", "#")
+        link.text("Cancelar")
         item.text(array.nome)
+        item.append(" - ")
+        item.append(link)
         $("#pedidos").append(item)
     }
 
     function atualizaValorFinal(array){
         let valor = $("#valorTotal")
         valorFinal = parseFloat(valor.text())
-        
         valorFinal += array.valorUnitario
+        $("#valorTotal").html(valorFinal)
+    }
+
+    function excluiValor(array){
+        let valor = $("#valorTotal")
+        valorFinal = parseFloat(valor.text())
+        valorFinal -= array.valorUnitario
         $("#valorTotal").html(valorFinal)
     }
 
 	$("#cardapio").on("click", "li",function(){
 		var itemEscolhido = pesquisaPorId(cardapio, $(this).attr("id"));
-        console.log(itemEscolhido);
         criaElemento(itemEscolhido)
         atualizaValorFinal(itemEscolhido)
-        /*
-            Sua atividade
-            - coloque seu código aqui
-            - você deve criar elemento de lista e (re)calcular o total
-        */
+        
 	});
+
+    $("#pedidos").on("click", "a",function(){
+        let item = $(this).parent()
+        item.hide()
+        $(this).hide()
+        let valor = pesquisaPorId(cardapio, $(this).attr("class"))
+        excluiValor(valor)
+    })
 });

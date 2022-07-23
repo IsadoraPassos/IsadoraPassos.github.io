@@ -1,0 +1,27 @@
+* {
+    margin: 5px auto;
+    line-height: 1.8rem;
+}
+
+#conteudo {
+    width: 400px;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+#cardapio {
+    list-style: none;
+    width: 130px;
+    text-align: left;
+}
+
+#pedidos {
+    list-style: none;
+    width: 190px;
+    text-align: left;
+}
+
+h2 {
+    margin: 20px;
+}
