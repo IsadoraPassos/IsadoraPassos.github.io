@@ -6,40 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../img/icone.png" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../img/icone.png" >
     <title>Karen M. McManus</title>
 </head>
 <body>
     <!--Área do cabeçalho-->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html"><img src="../img/icone.png" alt="logo" style="height: 50px; width:50px"></a></li>
-                <li><a href="../livros.html">Livros</a></li>
-                <li><a href="../autores.html">Autores</a></li>
-                <li><a href="../login-cadastro.html">Login/Cadastro</a></li>
-            </ul>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/icone.png" class="img-fluid logo" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!--Botão responsivo do menu-->
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../livros.html">Livros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../autores.html">Autores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login-cadastro.html"><i class="fa fa-user"></i> Login/Cadastro</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <!--Área da página principal-->
-    <main>
+<!--Área da página principal-->
+    <main class="main-espaco">
         <p><a href="../index.html">home</a> > <a href="../autores.html">autores</a> > Karen M. McManus</p>
-        <section>
-            <img src="../img/autores/karen-mcmanus.jpg" alt="autor">
-            <div>
-                <h1>Karen M. McManus</h1>
-                <h4>Sobre o autor</h4>
-                <p>
-                    Karen M. McManus (1969) é uma escritora norte-americana de ficção para jovens adultos. Ela é mais conhecida por seu primeiro romance, One of Us Is Lying, que passou mais de 200 semanas na lista de best-sellers do New York Times. Ele recebeu uma crítica com estrela da Publishers Weekly. McManus frequentou o College of the Holy Cross, obtendo um bacharelado em inglês e a Northeastern University, obtendo um mestrado em jornalismo. Ela mora em Cambridge, Massachusetts. Os trabalhos da escritora foram traduzidos para mais de 40 idiomas. Quando não está trabalhando ou escrevendo ela adora viajar com o filho. 
-                </p>
+        <section class="container container-espaco">
+            <div class="row justify-content-center">
+                <div class="col-lg-auto">
+                    <img src="../img/autores/karen-mcmanus.jpg" alt="autor" class="img-autor">
+                </div>
+                
+                <div class="col-lg-8 d-flex align-items-center">
+                    <div>
+                        <h1>Karen M. McManus</h1>
+                        <h4>Sobre o autor</h4>
+                        <p>
+                            Karen M. McManus (1969) é uma escritora norte-americana de ficção para jovens adultos. Ela é mais conhecida por seu primeiro romance, One of Us Is Lying, que passou mais de 200 semanas na lista de best-sellers do New York Times. Ele recebeu uma crítica com estrela da Publishers Weekly. McManus frequentou o College of the Holy Cross, obtendo um bacharelado em inglês e a Northeastern University, obtendo um mestrado em jornalismo. Ela mora em Cambridge, Massachusetts. Os trabalhos da escritora foram traduzidos para mais de 40 idiomas. Quando não está trabalhando ou escrevendo ela adora viajar com o filho. 
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
+
+        <section class="container">
             <h2>Princiais publicações de nome do autor</h2>
             <article>
                 <div>
                     <figure>
-                        <img src="../Livros/img/Um-de-Nós-Está-Mentindo.jpeg" alt="Capa do Livro">
+                        <img src="../img/capas/Um-de-Nós-Está-Mentindo.jpeg" alt="Capa do Livro" class="img-livro-autores">
                         <figcaption>
                             <h4>Um de Nós Está Mentindo</h4>
                             <p>Karen M. McManus</p>
@@ -49,7 +72,7 @@
                 </div>
                 <div>
                     <figure>
-                        <img src="../Livros/img/Um-de-Nós-é-o-Próximo.jpg" alt="Capa do Livro">
+                        <img src="../img/capas/Um-de-Nós-é-o-Próximo.jpg" alt="Capa do Livro" class="img-livro-autores">
                         <figcaption>
                             <h4>Um de Nós é o Próximo</h4>
                             <p>Karen M. McManus</p>
@@ -59,7 +82,7 @@
                 </div>
                 <div>
                     <figure>
-                        <img src="../Livros/img/Um-de-Nós-é-o-Próximo.jpg" alt="Capa do Livro">
+                        <img src="../img/capas/Um-de-Nós-é-o-Próximo.jpg" alt="Capa do Livro" class="img-livro-autores">
                         <figcaption>
                             <h4>Um de Nós é o Próximo</h4>
                             <p>Karen M. McManus</p>
@@ -69,7 +92,7 @@
                 </div>
                 <div>
                     <figure>
-                        <img src="../Livros/img/Assim-você-me-mata.jpg" alt="Capa do Livro">
+                        <img src="../img/capas/Assim-você-me-mata.jpg" alt="Capa do Livro" class="img-livro-autores">
                         <figcaption>
                             <h4>Assim você me mata</h4>
                             <p>Karen M. McManus</p>
@@ -79,7 +102,7 @@
                 </div>
                 <div>
                     <figure>
-                        <img src="../Livros/img/Mortos-Não-Contam-Segredos.jpg" alt="Capa do Livro">
+                        <img src="../img/capas/Mortos-Não-Contam-Segredos.jpg" alt="Capa do Livro" class="img-livro-autores">
                         <figcaption>
                             <h4>Mortos Não Contam Segredos</h4>
                             <p>Karen M. McManus</p>
@@ -122,5 +145,12 @@
             <a href="#"><i class="fa fa-whatsapp"></i></a>
         </div>
     </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

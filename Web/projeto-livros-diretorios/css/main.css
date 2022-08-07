@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header
+{
+    width: 100%;
+    background-color: #B1CCC4;
+    transition: background ease-out 0.2s;
+}
+
+#header.active
+{
+    position: fixed;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.navbar-collapse{
+    width: auto;
+}
+
+nav a img
+{
+    width: 100px;
+}
+
+.element-item img
+{
+    width: 300px;
+    height: 445px;
+    border-radius: 5px;
+    transition: all ease-out 0.2s;
+}
+
+.element-item img:hover
+{
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+.button-group
+{
+    margin-bottom: 30px;
+}
+
+.button-group button
+{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none;
+}
+
+.button-group button + button /*margem esuqerda em todos, menos no primeiro item*/
+{
+    margin-left: 30px;
+}
+
+.button-group button.active
+{
+   color: #B1CCC4;
+}
+
+footer{
+    width: 100%;
+    background-color: #4E5861;
+}
+
+/*Página dos livros - Isadora*/
+
+.main-espaco {
+    padding: 20px;
+}
+
+.container-espaco{
+    padding-top: 20px;
+    padding-bottom:60px;
+}
+
+.img-livros {
+    width: 334px;
+    height: 499 px;
+}
+
+/* Página dos autores - Isadora*/
+
+.img-autores {
+    width: 250px; height: 350px
+}
+
+.img-autor {
+    width: 350px;
+    height: 350px;
+}
+
+.img-livro-autores {
+    width: 300px;
+    height: 430 px;
+}

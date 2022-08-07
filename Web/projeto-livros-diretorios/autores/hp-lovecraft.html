@@ -6,40 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../img/icone.png" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../img/icone.png" >
     <title>Howard Phillips Lovecraft</title>
 </head>
 <body>
     <!--Área do cabeçalho-->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html"><img src="../img/icone.png" alt="logo" style="height: 50px; width:50px"></a></li>
-                <li><a href="../livros.html">Livros</a></li>
-                <li><a href="../autores.html">Autores</a></li>
-                <li><a href="../login-cadastro.html">Login/Cadastro</a></li>
-            </ul>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/icone.png" class="img-fluid logo" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!--Botão responsivo do menu-->
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../livros.html">Livros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../autores.html">Autores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login-cadastro.html"><i class="fa fa-user"></i> Login/Cadastro</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <!--Área da página principal-->
-    <main>
+<!--Área da página principal-->
+    <main class="main-espaco">
         <p><a href="../index.html">home</a> > <a href="../autores.html">autores</a> > Howard Phillips Lovecraft</p>
-        <section>
-            <img src="../img/autores/hp-lovecraft.jpg" alt="autor">
-            <div>
-                <h1>Howard Phillips Lovecraft</h1>
-                <h4>Sobre o autor</h4>
-                <p>
-                    Howard Phillips Lovecraft (Providence, Rhode Island, 20 de agosto de 1890 — Providence, Rhode Island, 15 de março de 1937), mais conhecido como H. P. Lovecraft, foi um escritor estadunidense que revolucionou o gênero de terror, ficção estranha, científica, fantasia e horror, atribuindo-lhe elementos fantásticos típicos dos gêneros de fantasia e ficção científica, sendo mais conhecido por sua criação dos Mitos de Cthulhu.
-                </p>
+        <section class="container container-espaco">
+            <div class="row justify-content-center">
+                <div class="col-lg-auto">
+                    <img src="../img/autores/hp-lovecraft.jpg" alt="autor" class="img-autor">
+                </div>
+                
+                <div class="col-lg-8 d-flex align-items-center">
+                    <div>
+                        <h1>Howard Phillips Lovecraft</h1>
+                        <h4>Sobre o autor</h4>
+                        <p>
+                            Howard Phillips Lovecraft (Providence, Rhode Island, 20 de agosto de 1890 — Providence, Rhode Island, 15 de março de 1937), mais conhecido como H. P. Lovecraft, foi um escritor estadunidense que revolucionou o gênero de terror, ficção estranha, científica, fantasia e horror, atribuindo-lhe elementos fantásticos típicos dos gêneros de fantasia e ficção científica, sendo mais conhecido por sua criação dos Mitos de Cthulhu.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
+
+        <section class="container">
             <h2>Princiais publicações de nome do autor</h2>
             <article>
                 <div>
                     <figure>
-                        <img src="../Livros/img/O-Caso-de-Charles-Dexter-Ward-Nas-Montanhas-da-Loucura-&-contos.webp" alt="Capa do Livro">
+                        <img src="../img/capas/O-Caso-de-Charles-Dexter-Ward-Nas-Montanhas-da-Loucura" alt="Capa do Livro" class="img-livro-autores">
                         <figcaption>
                             <h4>O Caso de Charles Dexter Ward, Nas Montanhas da Loucura & contos</h4>
                             <p>H. P. Lovecraft</p>
@@ -49,7 +72,7 @@
                 </div>
                 <div>
                     <figure>
-                        <img src="../Livros/img/O-medo-à-espreita.jpg" alt="Capa do Livro">
+                        <img src="../img/capas/O-medo-à-espreita.jpg" alt="Capa do Livro" class="img-livro-autores">
                         <figcaption>
                             <h4>O medo à espreita</h4>
                             <p>H. P. Lovecraft</p>
@@ -59,7 +82,7 @@
                 </div>
                 <div>
                     <figure>
-                        <img src="../Livros/img/Historias-para-não-dormir.jpg" alt="Capa do Livro">
+                        <img src="../img/capas/Historias-para-não-dormir.jpg" alt="Capa do Livro" class="img-livro-autores">
                         <figcaption>
                             <h4>Histórias Para Não Dormir</h4>
                             <p>H. P. Lovecraft</p>
@@ -69,7 +92,7 @@
                 </div>
                 <div>
                     <figure>
-                        <img src="../Livros/img/O-Chamado-de-Cthulhu-e-Outros-Contos.jpg" alt="Capa do Livro">
+                        <img src="../img/capas/O-Chamado-de-Cthulhu-e-Outros-Contos.jpg" alt="Capa do Livro" class="img-livro-autores">
                         <figcaption>
                             <h4>O Chamado de Cthulhu e Outros Contos</h4>
                             <p>H. P. Lovecraft</p>
@@ -79,7 +102,7 @@
                 </div>
                 <div>
                     <figure>
-                        <img src="../Livros/img/A-Sombra-de-Innsmouth.jpg" alt="Capa do Livro">
+                        <img src="../img/capas/A-Sombra-de-Innsmouth.jpg" alt="Capa do Livro" class="img-livro-autores">
                         <figcaption>
                             <h4>A Sombra de Innsmouth</h4>
                             <p>H. P. Lovecraft</p>
@@ -122,5 +145,12 @@
             <a href="#"><i class="fa fa-whatsapp"></i></a>
         </div>
     </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

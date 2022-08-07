@@ -87,3 +87,5 @@ $(function(){
         excluiValor(valor)
     })
 });
+
+// https://rafaelescalfoni.github.io/turmas/2022/fund_web/labJQuery/atividade02.html
