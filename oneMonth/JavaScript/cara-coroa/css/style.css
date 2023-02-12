@@ -1,0 +1,22 @@
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background: beige;
+}
+
+.imagem {
+    width: 50%;
+}
+
+@media only screen and (min-width: 1060px) {
+body {
+    width: 600px;
+}
+
+.imagem {
+    width: 250px;
+}
+
+}

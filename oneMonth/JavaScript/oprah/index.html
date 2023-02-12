@@ -12,9 +12,19 @@
 
         var username = prompt('Qual é o seu nome?');
         var car = new Array('BMW', 'Saab', 'Maserati');
+        var randomNumber = Math.floor(Math.random()*car.length);
 
-        if(username == "Chris"){
-            document.write("<h1>Ola "+ username +" você ganhou uma "+car[0]+"!</h1>");    
+        if(username == "Chris" || username == "Isadora"){
+            document.write("<h1>Ola "+ username +" você ganhou uma "+car[randomNumber]+"!</h1>");
+            if(randomNumber == 0){
+                document.write("<img src='./img/bmw.png' alt='BMW'>");
+            }
+            else if (randomNumber == 1){
+                document.write("<img src='./img/saab.jpg' alt='Saab'>");
+            }
+            else {
+                document.write("<img src='./img/maserati.jpg' alt='Maserati'>");
+            }    
         }
         else {
         document.write("<h1>Ola "+ username +"!</h1>");

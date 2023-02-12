@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara ou Coroa</title>
+    <script>
+
+        var jogarMoeda = null;
+
+        function jogar(){
+            jogarMoeda = Math.floor(Math.random()*2);
+        }
+
+        function cara(){ 
+            jogar();
+            var resultado = document.getElementById("resultado");
+            if(jogarMoeda == 0){
+                resultado.innerHTML = '<h2>Parabéns! O resultado era Cara</h2>';
+                resultado.innerHTML +="<img src='./img/cara.jpg' alt='cara de uma moeda' class='imagem'>";            
+            }
+            else {
+                resultado.innerHTML = "<h2>Que pena você perdeu. O resultado era Coroa</h2>";
+            }
+        }
+        function coroa() {
+            jogar();
+            var resultado = document.getElementById("resultado");
+            if(jogarMoeda == 1){
+                resultado.innerHTML = "<h2>Parabéns! O resultado era Coroa</h2>";
+                resultado.innerHTML += "<img src='./img/coroa.png' alt='coroa de uma moeda' class='imagem'>";
+            }
+            else {
+                resultado.innerHTML ="<h2>Que pena você perdeu. O resultado era Cara</h2>";
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Escolha Cara ou Coroa</h1>
+    <button onclick="cara()">Cara</button>
+    <button onclick="coroa()">Coroa</button>
+
+    <div id="resultado"></div>
+    
+</body>
+</html>

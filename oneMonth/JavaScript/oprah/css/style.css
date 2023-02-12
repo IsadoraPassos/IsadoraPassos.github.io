@@ -10,3 +10,9 @@ h1 {
     font-size: 80px;
     color: #333	;
 }
+
+img {
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+}
