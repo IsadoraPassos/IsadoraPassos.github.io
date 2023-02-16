@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Funções</h1>
+    <h3>Soma:</h3>
+    <input type="number" id="n1" name="numeroSoma1">
+    <input type="number" name="numeroSoma2" id="n2">
+    <button id="botao1">Somar</button>
+    <h4 id="resp1"></h4>
+
+    <h3>Quantas letras?</h3>
+    <input type="text" name="palavra" id="p1">
+    <button id="botao2">Contar</button>
+    <h4 id="resp2"></h4>
+
+    <script>
+        function sum(n1,n2){
+            /*var DECIMAL = 10;
+            return parseInt(n1, DECIMAL) + parseInt(n2, DECIMAL);*/
+            n1 = +n1;
+            n2 = +n2;
+            return n1 + n2;
+        }
+
+        function contarLetras(palavra){
+            var resultado = palavra.length;
+            return resultado;
+        }
+
+        var soma = document.querySelector("#botao1");
+        soma.addEventListener('click', function(){
+            var n1 = document.getElementById("n1").value;
+            var n2 = document.getElementById("n2").value;
+            
+            var resp = document.querySelector("#resp1");
+            resp.innerHTML = sum(n1,n2);
+            document.getElementById("n1").value = "";
+            document.getElementById("n2").value = "";
+        })
+
+        var quantasLetras = document.querySelector("#botao2");
+        quantasLetras.addEventListener('click', function(){
+            var palavra = document.getElementById("p1").value;
+            var resp = document.querySelector("#resp2");
+            resp.innerHTML = contarLetras(palavra);
+            document.getElementById("p1").value = "";
+        })
+    </script>
+</body>
+</html>
